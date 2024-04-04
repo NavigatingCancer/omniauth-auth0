@@ -11,14 +11,14 @@ group :development do
   gem 'pry'
   gem 'rubocop', require: false
   gem 'shotgun'
-  gem 'sinatra'
-  gem 'thin'
+  gem 'sinatra', '>= 2.0.6'
+  gem 'thin', '>= 1.8.0'
 end
 
 group :test do
   gem 'guard-rspec', require: false
   gem 'listen', '~> 3.1.5'
-  gem 'rack-test'
+  gem 'rack-test', '>= 2.0.0'
   gem 'rspec', '~> 3.5'
   gem 'codecov', require: false
   gem 'simplecov'
